@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: bold;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 800px;
+    background: linear-gradient(rgba(0,34,33,0.3), #0a2392), url(images/medium-shot-people-praying-together.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+header nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+div.logo img {
+    width: 70px;
+    height: 70px;
+}
+div.ministryName {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(5, 12, 46);
+    margin-right: 10rem;
+}
+
+div.icon {
+    color: rgb(255, 255, 255);
+    font-size: 1.56rem;
+    cursor: pointer;
+    display: none;
+}
+header h1 {
+    text-align: center;
+    font-size: 58px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(251, 252, 255);
+    margin-bottom: 100px;
+}
+
+div.latest {
+    padding-bottom: 50px;
+}
+div.latest div {
+    text-transform: uppercase;
+    color: #b0c6df;
+    font-weight: bold;
+}
+div.latest h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    font-size: 30px;
+}
+.latest p {
+    color: white;
+    letter-spacing: 2px;
+    text-align: left;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*  */
+i.play:hover {
+    background: skyblue;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+.menuLinks a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 7px;
+    /* line-height: 3; */
+    transition: .4s
+}
+.menuLinks a:hover {
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 10px;
+}
+.offcanvas-header a {
+    text-decoration: none;
+    display: block;
+    margin-left: 20px;
+}
+.offcanvas-header i {
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+}
+.offcanvas-header i:hover {
+    background-color: rgb(6, 63, 117);
+    color: white
+}
+.footer-content {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.footer-content i {
+    font-size: 22px;
+}
+.footer-content a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer-content i:hover {
+    color:rgb(6, 63, 117);
+}
+div.current img {
+    width: 100vw;
+}
+div.experience {
+    width: 100vw;
+    height: fit-content;
+    background-color: rgb(56, 56, 100);
+    padding: 100px 20px;
+    color: white;
+
+}
+.experience h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+div.experience h1,p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.experience i {
+    font-size: 25px;
+    color: orange;
+}
+.ways p {
+    color: rgb(136, 134, 134);
+    text-align: left;
+}
+.ways a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+div.values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px;
+}
+
+div.values h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+h4 {
+    font-weight: bold;
+}
+.values img {
+    width: 100px;
+    height: 100px;
+}
+.values p {
+    font-size: 15px;
+}
+
+div.links {
+    display: flex;
+    gap:15px;
+    margin-right: 10rem;
+}
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.links a:hover {
+    color: rgb(14, 115, 155)
+}
+
+
+div.sermons {
+    background-color:rgb(56, 56, 100);
+    padding: 40px 60px;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.columns {
+    flex: 50%;
+    padding: 10px;
+}
+
+.upcoming, .latest-sermons {
+    display: block;
+}
+.sermons p {
+    text-align: left;
+}
+.sermons h2 {
+    text-transform: uppercase;
+}
+div.dates {
+    display: flex;
+    gap: 15px
+}
+td,th {
+    padding: 30px;
+}
+th {
+    font-size: 20pt;
+}
+hr {
+    width: 450px;
+}
+
+@media(max-width: 992px) {
+    i.play {
+        position: absolute;
+        top: 400px;
+        left: 6rem;
+    }
+    div.links {
+        display: none;
+    
+    }
+    .user {
+        display: none;
+    }
+    div.icon {
+        display: block;
+    }
+    div.ministryName {
+        margin-right: 16rem
+    }
+}
+
+@media(max-width: 590px) {
+    header {
+        width: 100vw;
+        height: 600px;
+        background: linear-gradient(rgba(0,34,33,0.3), #0a2392), url(images/medium-shot-people-praying-together.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
+    div.logo img {
+        width: 50px;
+        height: 50px;
+    }
+    div.ministryName {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-right: 8rem;
+        color: rgb(5, 12, 46);
+    }
+    
+    div.icon {
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 38px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(251, 252, 255);
+        margin-bottom: 100px;
+    }
+    i.play {
+        position: absolute;
+        top: 400px;
+        left: 4rem;
+    }
+    div.links {
+        display: none;
+    }
+   .user {
+        display: none;
+    }
+
+    
+}
+@media(max-width: 500px) {
+    header {
+        width: 100vw;
+        height: 600px;
+        background: linear-gradient(rgba(0,34,33,0.3), #0a2392), url(images/medium-shot-people-praying-together.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    
+    div.logo img {
+        width: 50px;
+        height: 50px;
+    }
+    div.ministryName {
+        font-size: 15px;
+        text-transform: uppercase;
+        color: rgb(5, 12, 46);
+        margin-right: 5rem;
+    }
+    
+    div.icon {
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: block;
+    }
+    header h1 {
+        text-align: center;
+        font-size: 38px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(251, 252, 255);
+        margin-bottom: 100px;
+    }
+    i.play {
+        position: absolute;
+        top: 400px;
+        left: 2rem;
+    }
+
+
+div.links {
+    display: none;
+}
+.user {
+    display: none;
+}
+ .sermons {
+     display: block;
+ }
+ .columns {
+     display: block;
+ }
+}
